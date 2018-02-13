@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- responsive: meta tag viewport; makes site pages work on all devices & screen sizes -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>Gallery</title>
+    
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+<link href="css/lightbox.css" rel="stylesheet">
+<script type='text/javascript' src='js/lightbox-plus-jquery.js'></script>
+
+</head>
+    
+<body>
+<div class="container">
+    <header>
+    <a href="index.html"><img src="images/OA%20Logo.png" alt="Logo" class="logo"></a>
+    <nav>
+        <ul class="top-nav" id="my-top-nav">
+           
+            <li class="icon"><a href="javascript:void(0);" style="font-size:2.5em;" onclick="myFunction()">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    </header> 
+    
+    <div id="tagline tagelinegal">
+        <a href="images/alma-thomas/alma-thomas-springtime-in-washington-1971.jpg" data-lightbox="alma" data-title="Springtime in Washington 1971"><img src="images/alma-thomas/alma-thomas-springtime-in-washington-1971.jpg" alt=""  class="featured"></a>
+    <hr/>
+    <h2>Alma Thomas</h2>
+    <p>A short description of the artist and their work. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ex, porta id ipsum sed, sagittis mollis erat. </p>
+    <hr/>
+    </div>
+    
+    <h3 id="works">Works</h3>
+    
+    <div class="gallery">
+    <div class="smcol dleft">
+    <a href="images/alma-thomas/alma-thomas-aquatic-gardens-1973.jpg" data-lightbox="alma" data-title="Aquatic Guardens 1973"><img src="images/alma-thomas/alma-thomas-aquatic-gardens-1973.jpg"  alt="">
+        </div></a>
+    
+     <div class="smcol right">
+    <a href="images/alma-thomas/alma-thomas-cherry-blosson-symphony.jpg" data-lightbox="alma" data-title="Cherry Blossom Symphony"><img src="images/alma-thomas/alma-thomas-cherry-blosson-symphony.jpg"  alt="">
+        </div></a>
+
+    <a href="images/alma-thomas/alma-thomas-fall-approaching-1969.jpg" data-lightbox="alma" data-title="Fall Approaching 1969"><div class="smcol dright dmid">
+    <img src="images/alma-thomas/alma-thomas-fall-approaching-1969.jpg"  alt="">
+        </div></a>
+    
+    <a href="images/alma-thomas/alma-thomas-fluttering-autumn-leaves-fluttering-in-the-breeze-1973.jpg" data-lightbox="alma" data-title="Autumn Leaves Fluttering in the Breeze 1973"><div class="smcol right dleft">
+    <img src="images/alma-thomas/alma-thomas-fluttering-autumn-leaves-fluttering-in-the-breeze-1973.jpg"  alt="">
+        </div></a>
+        
+    <a href="images/alma-thomas/alma-thomas-hydrangeas-spring-song-1976.jpg" data-lightbox="alma" data-title="Hydrangeas Spring Song 1976"><div class="smcol dmid ">
+    <img src="images/alma-thomas/alma-thomas-hydrangeas-spring-song-1976.jpg"  alt="">
+        </div> </a>
+    
+    <a href="images/alma-thomas/alma-thomas-idktitle-nightfall.jpg" data-lightbox="alma" data-title="Nightfall"><div class="smcol right dright">
+    <img src="images/alma-thomas/alma-thomas-idktitle-nightfall.jpg"  alt="">
+        </div></a>
+        
+    
+    <hr class="anoshohr"/> 
+     <a href="gallery.html"><h3 id="works" style="clear: both">Back to Gallery</h3></a>
+    </div> <!--end of gallery-->
+    <hr/>
+
+   
+    <footer>
+    <p>&#9400; 2017 Dejon Alomar</p>
+    </footer>
+</div> <!-- End onf container -->
+    <script>
+            function myFunction() {
+                var x = document.getElementById("my-top-nav");
+                if (x.className === "top-nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "top-nav";
+                }
+            }
+    
+</script>
+<script>
+     lightbox.option({
+      "imageFadeDuration":300,
+      "resizeDuration": 600,
+    "showImageNumberLabel": false
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- responsive: meta tag viewport; makes site pages work on all devices & screen sizes -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<title>Gallery</title>
+    
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    
+<link href="css/lightbox.css" rel="stylesheet">
+<script type='text/javascript' src='js/lightbox-plus-jquery.js'></script>
+</head>
+    
+<body>
+<div class="container">
+    <header>
+    <a href="index.html"><img src="images/OA%20Logo.png" alt="Logo" class="logo"></a>
+    <nav>
+        <ul class="top-nav" id="my-top-nav">
+           
+            <li class="icon"><a href="javascript:void(0);" style="font-size:2.5em;" onclick="myFunction()">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="Gallery.html">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+    </header> 
+    
+   <div id="tagline tagelinegal">
+    <a href="images/jacob-lawrence/jacob-lawrence_migration-series-panel17.jpg" data-lightbox="jacob" data-title="Migration Series Panel #17"><img src="images/jacob-lawrence/jacob-lawrence_migration-series-panel17.jpg" alt="" id="tagline" class="featured"></a>
+    <hr/>
+    <h2>Jacob Lawrence</h2>
+    <p>A short description of the artist and their work. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor ex, porta id ipsum sed, sagittis mollis erat. </p>
+    </div>
+    <hr/>
+    
+    <h3 id="works">Works</h3>
+    
+    <div class="gallery">
+        
+    <div class="smcol"><a href="images/jacob-lawrence/jacob-lawrence_back-of-the-bus.jpg" data-lightbox="jacob" data-title="Back of the Bus">
+        <img src="images/jacob-lawrence/jacob-lawrence_back-of-the-bus.jpg"  alt=""></a>
+    </div>
+    
+    <div class="smcol right">
+        <a href="images/jacob-lawrence/jacob-lawrence_harriet-tubman.jpg" data-lightbox="jacob" data-title="Harriet Tubman"><img src="images/jacob-lawrence/jacob-lawrence_harriet-tubman.jpg"  alt=""></a>
+    </div>
+
+     <div class="smcol">
+         <a href="images/jacob-lawrence/jacob-lawrence_migration-chained.jpg" data-lightbox="jacob" data-title="Migration Chained"><img src="images/jacob-lawrence/jacob-lawrence_migration-chained.jpg"  alt=""></a>
+    </div>
+    
+     <div class="smcol right">
+         <a href="images/jacob-lawrence/jacob-lawrence_migration-series-panel40.jpg" data-lightbox="jacob" data-title="Migration Series Panel #40"><img src="images/jacob-lawrence/jacob-lawrence_migration-series-panel40.jpg"  alt=""></a>
+    </div>
+        
+    <div class="smcol">
+        <a href="images/jacob-lawrence/jacob-lawrence_migration-series-panel52.jpg" data-lightbox="jacob" data-title="Migration Series Panel #52"><img src="images/jacob-lawrence/jacob-lawrence_migration-series-panel52.jpg"  alt=""></a>
+    </div>
+    
+     <div class="smcol right">
+         <a href="images/jacob-lawrence/jacob-lawrence_migration-streets.jpg" data-lightbox="jacob" data-title="Migration Streets"><img src="images/jacob-lawrence/jacob-lawrence_migration-streets.jpg"  alt=""></a>
+    </div>
+        
+    <hr class="anoshohr"/> 
+     <a href="gallery.html"><h3 id="works">Back to Gallery</h3></a>
+    </div> <!--end of gallery-->
+    <hr/>
+
+   
+    <footer>
+    <p>&#9400; 2017 Dejon Alomar</p>
+    </footer>
+</div> <!-- End onf container -->
+    <script>
+            function myFunction() {
+                var x = document.getElementById("my-top-nav");
+                if (x.className === "top-nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "top-nav";
+                }
+            }
+        </script>
+    <script>
+     lightbox.option({
+      "imageFadeDuration":300,
+      "resizeDuration": 600,
+    "showImageNumberLabel": false
+    })
+</script>
+</body>
+</html>
